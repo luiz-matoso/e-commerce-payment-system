@@ -16,7 +16,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 
-@Entity
+@Entity(name = "users")
 @Table(name = "users")
 @Getter
 @Setter
@@ -35,7 +35,12 @@ public class User implements UserDetails{
     private boolean enabled;
 
     public User(String firstName, String lastName, String email, String password) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
     }
+
 
 
     @Override
