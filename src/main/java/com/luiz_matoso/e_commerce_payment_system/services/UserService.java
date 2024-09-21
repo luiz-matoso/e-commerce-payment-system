@@ -36,8 +36,6 @@ public class UserService {
 
             User savedUser = userRepository.save(user);
 
-            System.out.println("User saved with ID: " + savedUser.getId());
-
             UserResponse userResponse = new UserResponse(
                     savedUser.getId(),
                     savedUser.getFirstName(),
