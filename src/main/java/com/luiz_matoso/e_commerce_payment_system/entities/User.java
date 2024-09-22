@@ -33,12 +33,14 @@ public class User implements UserDetails{
     private String password;
     private String authenticationCode;
     private boolean enabled;
+    private String userRole;
 
-    public User(String firstName, String lastName, String email, String password) {
+    public User(String firstName, String lastName, String email, String password, String userRole) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
+        this.userRole = userRole;
     }
 
     @Override

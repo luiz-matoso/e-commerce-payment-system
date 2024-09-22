@@ -23,10 +23,14 @@ public record UserRequest(
         @NotNull(message = "Password cannot be null.")
         @NotBlank(message = "Password cannot be empty.")
         @Size(min = 8, message = "Password must be minimum 8 characters.")
-        String password) {
+        String password,
+
+        @NotNull(message = "User role cannot be null.")
+        @NotBlank(message = "User role cannot be empty.")
+        String userRole) {
 
     public User convertDTO(){
-        return new User(firstName,lastName,email,password);
+        return new User(firstName,lastName,email,password, userRole);
     }
 
 }
