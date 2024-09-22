@@ -26,8 +26,6 @@ public class Credentials {
             System.out.println("Impossible to close file credentials.json");
         }
 
-        this.clientId = credentials.getString("client_id");
-        this.clientSecret = credentials.getString("client_secret");
         this.certificate = credentials.getString("certificate");
         this.sandbox = credentials.getBoolean("sandbox");
         this.debug = credentials.getBoolean("debug");
