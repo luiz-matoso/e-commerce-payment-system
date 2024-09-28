@@ -55,7 +55,7 @@ Pix is a real-time payment system developed by the Central Bank of Brazil. It al
 
 1. **📥 Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/e-commerce-payment-system.git
+   git clone https://github.com/luiz-matoso/e-commerce-payment-system.git
     ```
 2. **📂 Navigate to the project directory:**
     ```bash
