@@ -48,10 +48,4 @@ public class UserController {
             return "verify_failed";
         }
     }
-
-    @GetMapping("/teste")
-    public String teste(){
-        return "you're logged in.";
-    }
-
 }
